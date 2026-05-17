@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\MIX PC\\UnityProjects\\LabTechnicianSimulator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5256011-35DC-3BC7-82A4-17D4B497BA66}|Assembly-CSharp.csproj|c:\\users\\mix pc\\unityprojects\\labtechniciansimulator\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5256011-35DC-3BC7-82A4-17D4B497BA66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5256011-35DC-3BC7-82A4-17D4B497BA66}|Assembly-CSharp.csproj|c:\\users\\mix pc\\unityprojects\\labtechniciansimulator\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5256011-35DC-3BC7-82A4-17D4B497BA66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerControls.cs",
+              "DocumentMoniker": "C:\\Users\\MIX PC\\UnityProjects\\LabTechnicianSimulator\\Assets\\Scripts\\PlayerControls.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControls.cs",
+              "ToolTip": "C:\\Users\\MIX PC\\UnityProjects\\LabTechnicianSimulator\\Assets\\Scripts\\PlayerControls.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerControls.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T13:38:33.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\MIX PC\\UnityProjects\\LabTechnicianSimulator\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
