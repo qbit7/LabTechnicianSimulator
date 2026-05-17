@@ -8,17 +8,44 @@ public class AutoCollider
     {
         foreach (GameObject obj in Selection.gameObjects)
         {
-            MeshFilter[] meshes = obj.GetComponentsInChildren<MeshFilter>();
+            Mesh sharedMesh = null;
 
-            foreach (MeshFilter mesh in meshes)
+            // Обычный MeshFilter
+            MeshFilter meshFilter = obj.GetComponent<MeshFilter>();
+
+            if (meshFilter != null)
             {
-                if (mesh.GetComponent<MeshCollider>() == null)
-                {
-                    mesh.gameObject.AddComponent<MeshCollider>();
-                }
+                sharedMesh = meshFilter.sharedMesh;
             }
+
+            // Skinned Mesh Renderer
+            SkinnedMeshRenderer skinnedMesh = obj.GetComponent<SkinnedMeshRenderer>();
+
+            if (skinnedMesh != null)
+            {
+                sharedMesh = skinnedMesh.sharedMesh;
+            }
+
+            // Если меша нет вообще
+            if (sharedMesh == null)
+            {
+                Debug.LogWarning($"{obj.name} has no valid mesh!");
+                continue;
+            }
+
+            // Проверяем коллайдер
+            MeshCollider collider = obj.GetComponent<MeshCollider>();
+
+            if (collider == null)
+            {
+                collider = obj.AddComponent<MeshCollider>();
+            }
+
+            collider.sharedMesh = sharedMesh;
+
+            Debug.Log($"MeshCollider added to: {obj.name}");
         }
 
-        Debug.Log("Mesh Colliders Added!");
+        Debug.Log("Done!");
     }
 }

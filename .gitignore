@@ -18,5 +18,6 @@ UserSettings/
 *.opendb
 *.VC.db
 
+.vs/
 .DS_Store
 Thumbs.db
